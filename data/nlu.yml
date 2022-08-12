@@ -1,0 +1,97 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: order
+  examples: |
+    - can i have [two](quantity) [pepsi](item)
+    - can i have [2](quantity) [fries](item)
+    - can i have some [fries](item)
+    - I will have a [pizza](item)
+    - i will have a [burger](item)
+
+- intent: order_cancel
+  examples: |
+    - i'd like to cancel my order
+    - I changed my mind on my order
+    - cancel my order
+
+- intent: order_status
+  examples: |
+    - check status of my order
+    - when is my food coming in
+    - when will it get here
+    - I'd like to check the status of my order pls
+    - check status
+    - I'd like an update on my order
+    - Check status of my order
+    - I haven't received my order yet, can we check that?
+    - where is my order?
+    - I want to check the status of my order
+    - actually can I check the status of my order
+
+- intent: recommendation
+  examples: |
+    - what's special?
+    - what's today's special?
+    - what do you recommend?
+    - what are your best sellers?
+    - show me burgers
+    - can you show me pizzas
+    - can you show me soups
+    - show me drinks
+
+intent: view_menu
+  examples: |
+    - show me the menu
+    - can i see the menu ?
+    - menu
+    - what is available ?
+    - what do you have ?

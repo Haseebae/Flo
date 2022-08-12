@@ -1,0 +1,10 @@
+version: "3.1"
+
+rules:
+
+- rule: view menu
+  steps:
+  - intent: view_menu
+  - action: utter_menu
+
+

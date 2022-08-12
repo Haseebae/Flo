@@ -1,0 +1,51 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - order
+  - order_cancel
+  - order_status
+  - recommendation
+  - view_menu
+
+entities:
+  - item
+  - quantity
+
+slots:
+  item:
+    type: unfeaturized
+  quantity:
+    type: unfeaturized
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you today?"
+
+  utter_menu:
+  - text: "Here's the menu."
+
+  utter_add:
+  - text: "Item added successfully"
+
+  utter_out:
+  - text: "I'm sorry, we dont serve that."
+
+  utter_check:
+  - text: "Would you like to add anything else?"
+
+  utter_confirm:
+  - text: "Your order has been placed."
+
+  utter_recommendation:
+  - text: "Here is the recommendation as per your request."
+
+  utter_goodbye:
+  - text: "Bye"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
