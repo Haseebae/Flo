@@ -51,8 +51,8 @@ nlu:
 
 - intent: order
   examples: |
-    - can i have [two](quantity) [pepsi](item)
-    - can i have [2](quantity) [fries](item)
+    - can i have [two](qty) [pepsi](item)
+    - can i have [2](qty) [fries](item)
     - can i have some [fries](item)
     - I will have a [pizza](item)
     - i will have a [burger](item)
@@ -60,8 +60,21 @@ nlu:
 - intent: order_cancel
   examples: |
     - i'd like to cancel my order
-    - I changed my mind on my order
     - cancel my order
+    - i want to cancel
+
+- intent: order_edit
+  examples: |
+    - remove [1](qty) [pepsi](item) 
+    - cancel the [fries](item)
+    - cancel the [burgers](section)
+    - remove the [pizza](section)
+
+- intent: order_view
+  examples: |
+    - show me my order
+    - show order
+    - display order
 
 - intent: order_status
   examples: |
@@ -79,19 +92,33 @@ nlu:
 
 - intent: recommendation
   examples: |
-    - what's special?
-    - what's today's special?
+    - what's [special](section)?
+    - what's today's [special](section)?
     - what do you recommend?
-    - what are your best sellers?
-    - show me burgers
-    - can you show me pizzas
-    - can you show me soups
-    - show me drinks
+    - what are your [best sellers](section)?
+    - show me [burgers](section)
+    - can you show me [pizzas](section)
+    - can you show me [soups](section)
+    - show me [drinks](section)
 
-intent: view_menu
+- intent: view_menu
   examples: |
     - show me the menu
     - can i see the menu ?
     - menu
     - what is available ?
     - what do you have ?
+
+- lookup: item
+  examples: |
+    - pizza
+    - soup
+    - biriyani
+    - noodles
+    - burger
+    - pepsi
+    - thumbs up
+    - limca
+    - appy fizz
+
+
