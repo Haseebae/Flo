@@ -6,9 +6,5 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: order
-  - action: utter_add
-  - action: utter_check
-  - intent: deny
-  - action: utter_confirm
+
 

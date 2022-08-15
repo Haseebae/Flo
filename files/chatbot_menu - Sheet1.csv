@@ -1,0 +1,8 @@
+S.no,item,price,preference,type
+1,cheese pizza,300,V,pizza
+2,meat pizza,350,NV,pizza
+3,veg biriyani,300,V,biriyani
+4,non veg biriyani,350,NV,biriyani
+5,7 up,40,nil,drinks
+6,tea,20,nil,drinks
+7,coffee,20,nil,drinks

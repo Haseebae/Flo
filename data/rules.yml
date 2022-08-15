@@ -7,4 +7,20 @@ rules:
   - intent: view_menu
   - action: utter_menu
 
+- rule: cancel order
+  steps:
+  - intent: order_cancel
+  - action: utter_cancel
+  - action: utter_check
+
+- rule: check availabilty
+  steps:
+  - intent: order
+  - action: action_check_avail
+  - action: utter_check
+
+- rule: place order
+  steps:
+  - intent: deny
+  - action: utter_confirm
 
