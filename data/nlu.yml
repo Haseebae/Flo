@@ -38,6 +38,9 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - yes, confirm the order
+    - yes, place the order
+    - sure
 
 - intent: deny
   examples: |
@@ -45,61 +48,41 @@ nlu:
     - n
     - never
     - I don't think so
-    - don't like that
+    - don't place the order
     - no way
     - not really
 
 - intent: order
   examples: |
-    - can i have [two](qty) [pepsi](item)
-    - can i have [2](qty) [fries](item)
+    - can i have a [pepsi](item)
     - can i have some [fries](item)
     - I will have a [pizza](item)
-    - i will have a [burger](item)
+    - i want a [veg biriyani](item)
+    - get me a [pepsi](item)
+    - ill have a [meat pizza](item)
 
 - intent: order_cancel
   examples: |
     - i'd like to cancel my order
     - cancel my order
     - i want to cancel
-
-- intent: order_edit
-  examples: |
-    - remove [1](qty) [pepsi](item) 
-    - cancel the [fries](item)
-    - cancel the [burgers](section)
-    - remove the [pizza](section)
+    - cancel everything
 
 - intent: order_view
   examples: |
     - show me my order
     - show order
     - display order
-
-- intent: order_status
-  examples: |
-    - check status of my order
-    - when is my food coming in
-    - when will it get here
-    - I'd like to check the status of my order pls
-    - check status
-    - I'd like an update on my order
-    - Check status of my order
-    - I haven't received my order yet, can we check that?
-    - where is my order?
-    - I want to check the status of my order
-    - actually can I check the status of my order
+    - view order
 
 - intent: recommendation
   examples: |
-    - what's [special](section)?
-    - what's today's [special](section)?
-    - what do you recommend?
-    - what are your [best sellers](section)?
-    - show me [burgers](section)
+    - show me [biriyani](section)
     - can you show me [pizzas](section)
-    - can you show me [soups](section)
+    - can you show me [drinks](section)
     - show me [drinks](section)
+    - show me [non veg](section) items
+    - recommend a [pizza](section)
 
 - intent: view_menu
   examples: |
@@ -111,14 +94,19 @@ nlu:
 
 - lookup: item
   examples: |
-    - pizza
-    - soup
-    - biriyani
-    - noodles
-    - burger
+    - cheese pizza
+    - meat soup
+    - veg biriyani
+    - non veg biriyani
     - pepsi
-    - thumbs up
-    - limca
-    - appy fizz
+    - tea
+    - cofffee
 
+- lookup: section
+  examples: |
+    - pizza
+    - biriyani
+    - drinks
+    - veg
+    - non veg
 

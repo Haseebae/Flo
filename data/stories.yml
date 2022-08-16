@@ -2,9 +2,29 @@ version: "3.1"
 
 stories:
 
-- story: single_order
+- story: order confirmed
   steps:
-  - intent: greet
-  - action: utter_greet
+  - action: utter_check
+  - intent: deny
+  - action: action_view_order
+  - intent: affirm
+  - action: utter_confirm
 
+- story: view order and confirm
+  steps:
+  - intent: order_view
+  - action: action_view_order
+  - intent: affirm
+  - action: utter_confirm
 
+- story: view order and edit
+  steps:
+  - intent: order_view
+  - action: action_view_order
+  - intent: deny
+  - action: utter_check
+
+- story: recommend
+  steps:
+  - intent: recommendation
+  - action: action_recommend

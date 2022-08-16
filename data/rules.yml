@@ -2,25 +2,40 @@ version: "3.1"
 
 rules:
 
+- rule: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
 - rule: view menu
   steps:
   - intent: view_menu
-  - action: utter_menu
+  - action: action_view_menu
 
 - rule: cancel order
   steps:
   - intent: order_cancel
-  - action: utter_cancel
+  - action: action_cancel_order
   - action: utter_check
 
-- rule: check availabilty
+- rule: order 
   steps:
   - intent: order
   - action: action_check_avail
   - action: utter_check
 
-- rule: place order
+- rule: recommend
   steps:
-  - intent: deny
+  - intent: recommendation
+  - action: action_recommend
+
+- rule: view order 
+  steps:
+  - intent: order_view
+  - action: action_view_order
+
+- rule: confirm order
+  steps:
+  - intent: affirm
   - action: utter_confirm
 
