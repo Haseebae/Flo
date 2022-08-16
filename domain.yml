@@ -9,41 +9,30 @@ intents:
   - order_cancel
   - order_edit
   - order_view
-  - order_status
   - recommendation
   - view_menu
 
 entities:
   - item
-  - qty
   - section
 
 slots:
   item:
-    type: any
+    type: text
     mappings: 
     - type: from_entity
       entity: item
-  qty:
-    type: any
-    mappings:
-    - type: from_entity
-      entity: qty
+
   section:
-    type: any
+    type: text
     mappings:
     - type: from_entity
       entity: section
 
-forms:
-  restaurant_form:
-    required_slots:
-      - item
-      - qty
 
 responses:
   utter_greet:
-  - text: "Hey! How can I help you today?"
+  - text: "Hey! May i take your order."
 
   utter_menu:
   - text: "Here's the menu."
@@ -55,7 +44,7 @@ responses:
   - text: "I'm sorry, we dont serve {item}."
 
   utter_check:
-  - text: "Would you like to add anything else?"
+  - text: "Anything else?"
 
   utter_confirm:
   - text: "Your order has been placed."
@@ -71,6 +60,10 @@ responses:
 
 actions:
 - action_check_avail
+- action_recommend
+- action_view_menu
+- action_view_order
+- action_cancel_order
 
 session_config:
   session_expiration_time: 60
