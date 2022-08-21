@@ -6,7 +6,7 @@ PLEASE REFER TO "Flo_Report.pdf" FOR THE FULL DETAILED REPORT.
 
 This Chatbot is Created using a RASA, a machine learning Framework.
 
-TO INSTALL RASA FOLLOW THE STEPS LISTED IN THE FORUM: 
+TO INSTALL RASA FOLLOW THE STEPS LISTED HERE: 
 https://rasa.com/docs/rasa/installation/
   - This project is created using RASA v3.1 
   - Please install the required dependencies if you wish to use this project.
